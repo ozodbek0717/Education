@@ -1,0 +1,68 @@
+
+
+.site-header{
+    background-color: $color-blue;
+    padding: 16px 0;
+
+    @media(max-width:700px){
+        padding: 10px 0;
+    }
+}
+.header{
+    @include Display($ITEMS:center, $SPACE:space-between, $GAP:0px);
+
+    &__logo-link{
+        img{
+            
+        @media(max-width:700px){
+        display: block;
+        width: 80px;
+        height: 57px;
+    }
+        }
+    }
+
+    &__btns-wrapper{
+        @include Display($ITEMS:center, $SPACE:start, $GAP:15px);   
+    }
+
+    &__contact-btn{
+        @include ButtonStyle($btnClr:$color-black, $btnbg:$color-white, $btnBorderClr:transparent);
+
+        @media(max-width:700px){
+            display: none;
+    }
+    }
+    &__mobile-phone-img{
+        border: none;
+        background-color: transparent;
+        display: none; 
+
+        @media(max-width:700px){
+            display: block;
+    }
+    }
+    &__menu-btn{
+        border: none;
+        background-color: transparent;
+        display: none;
+
+        @media(max-width:1117px){
+            display: block;
+    }
+
+
+}
+
+.header__navbar{
+    @include Display($ITEMS:center, $SPACE:start, $GAP:35px);
+    @media(max-width:1117px){
+        display: none;
+    }
+
+    a{
+        @include TextStyle($FW:500, $FS:24px, $LH:100%, $LS:0%, $CLR:$color-white);
+    }
+}
+
+}
