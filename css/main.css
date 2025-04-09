@@ -31,7 +31,7 @@ body {
   font-family: "Livvic", sans-serif;
 }
 
-.container {
+.containers {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 13px;
@@ -77,6 +77,10 @@ body {
   border-radius: 10px;
   background-color: #FFFFFF;
   border: 3px solid transparent;
+}
+.header__contact-btn:hover {
+  color: white;
+  background-color: blue;
 }
 @media (max-width: 700px) {
   .header__contact-btn {

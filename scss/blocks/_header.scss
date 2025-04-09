@@ -23,11 +23,16 @@
     }
 
     &__btns-wrapper{
-        @include Display($ITEMS:center, $SPACE:start, $GAP:15px);   
+        @include Display($ITEMS:center, $SPACE:start, $GAP:15px);  
     }
+    
 
     &__contact-btn{
         @include ButtonStyle($btnClr:$color-black, $btnbg:$color-white, $btnBorderClr:transparent);
+        &:hover{
+            color:white;
+            background-color: blue;  
+        }
 
         @media(max-width:700px){
             display: none;
